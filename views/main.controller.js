@@ -60,5 +60,5 @@ function get_step(val) {
 }
 
 function aperture_calc(val, step) {
-    return Math.floor(Math.sqrt(Math.pow(2, get_step(val) + step)) * 10) / 10;
+    return Math.round(Math.sqrt(Math.pow(2, get_step(val) + step)) * 10) / 10;
 }
