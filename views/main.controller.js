@@ -40,8 +40,8 @@ Vue.component('aperture-calc', {
             this.valueAfter = aperture_calc(val, 1);
             this.halfBefore = aperture_calc(val, - 0.5);
             this.halfAfter = aperture_calc(val, 0.5);
-            this.thirdBefore = [aperture_calc(val, - 0.3), aperture_calc(val, - 0.7)];
-            this.thirdAfter = [aperture_calc(val, 0.3), aperture_calc(val, 0.7)];
+            this.thirdBefore = [aperture_calc(val, - 1/3), aperture_calc(val, - 2/3)];
+            this.thirdAfter = [aperture_calc(val, 1/3), aperture_calc(val, 2/3)];
             console.log("\n--------\n");
         }
     }
